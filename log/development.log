@@ -1,0 +1,1053 @@
+Started GET "/" for ::1 at 2023-02-08 23:51:49 +0530
+  
+ActiveRecord::NoDatabaseError (We could not find your database: courses_tutors_app_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.2) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-02-08 23:51:49 +0530
+  
+ActiveRecord::NoDatabaseError (We could not find your database: courses_tutors_app_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.4.2) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.4.2) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:613:in `connection'
+activerecord (7.0.4.2) lib/active_record/migration.rb:608:in `build_watcher'
+activerecord (7.0.4.2) lib/active_record/migration.rb:590:in `block in call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `synchronize'
+activerecord (7.0.4.2) lib/active_record/migration.rb:589:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (328.7ms)[0m  [1m[35mCREATE DATABASE "courses_tutors_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (70.4ms)[0m  [1m[35mCREATE DATABASE "courses_tutors_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (13.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTutors (20230208181936)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (8.8ms)[0m  [1m[35mCREATE TABLE "tutors" ("id" bigserial primary key, "name" character varying NOT NULL, "course_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ecbf595870"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (26.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "courses_tutors_app_development"[0m
+  [1m[35m (28.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "courses_tutors_app_test"[0m
+  [1m[35m (74.0ms)[0m  [1m[35mCREATE DATABASE "courses_tutors_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (73.1ms)[0m  [1m[35mCREATE DATABASE "courses_tutors_app_test" ENCODING = 'unicode'[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTutors (20230208181936)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "tutors" ("id" bigserial primary key, "name" character varying NOT NULL, "course_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ecbf595870"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(857007549794769135)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCourses (20230208182020)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "courses" ("id" bigserial primary key, "title" character varying NOT NULL, "description" character varying NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230208182020"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateTutors (20230208182945)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "tutors" ("id" bigserial primary key, "name" character varying NOT NULL, "courses_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_3122f0b084"
+FOREIGN KEY ("courses_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE INDEX "index_tutors_on_courses_id" ON "tutors" ("courses_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230208182945"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-08 18:30:21.825396"], ["updated_at", "2023-02-08 18:30:21.825396"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-02-09 00:05:16 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/selldo/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/selldo/.rvm/gems/ruby-3.1.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 471)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2327)
+
+
+Started POST "/api/v1/create" for ::1 at 2023-02-09 00:19:30 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/create"):
+  
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:20:01 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NoMethodError (undefined method `v1' for Api:Module):
+  
+app/controllers/api/v1/courses_controller.rb:1:in `<main>'
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:21:29 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/selldo/promobi_course_tutors_assesment/courses_tutors_app/app/models/course.rb:8: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...title, :description, presence :true
+...                              ^
+):
+  
+app/models/course.rb:8: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/course.rb:8: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/models/course.rb:8: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:21:53 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course A", "description"=>"Description for Course A", "tutors_attributes"=>[{"name"=>"Tut A"}, {"name"=>"Tut B"}]}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 0ms (ActiveRecord: 0.0ms | Allocations: 559)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:251:in `handle_unverified_request'
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:284:in `handle_unverified_request'
+actionpack (7.0.4.2) lib/action_controller/metal/request_forgery_protection.rb:273:in `verify_authenticity_token'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.4.2) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:106:in `run_callbacks'
+actionpack (7.0.4.2) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.4.2) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.4.2) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.4.2) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.4.2) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.4.2) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.4.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.4.2) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.4.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.4.2) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.4.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.4.2) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.6.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.6.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.6.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.6.2) lib/rack/head.rb:12:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.6.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.4.2) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.4.2) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.4.2) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.4.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.4.2) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.6.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.6.2) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.6.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.4.2) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.4.2) lib/rails/engine.rb:530:in `call'
+puma (5.6.5) lib/puma/configuration.rb:252:in `call'
+puma (5.6.5) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.5) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.5) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.5) lib/puma/server.rb:443:in `process_client'
+puma (5.6.5) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:22:22 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course A", "description"=>"Description for Course A", "tutors_attributes"=>[{"name"=>"Tut A"}, {"name"=>"Tut B"}]}}
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 5.1ms | Allocations: 13076)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'course_id' for Tutor.
+
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^):
+  
+app/controllers/api/v1/courses_controller.rb:8:in `create'
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTutors (20230208182945)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "tutors"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20230208182945"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTutors (20230208182945)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.4ms)[0m  [1m[35mCREATE TABLE "tutors" ("id" bigserial primary key, "name" character varying NOT NULL, "course_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ecbf595870"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE INDEX "index_tutors_on_course_id" ON "tutors" ("course_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230208182945"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:23:54 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course A", "description"=>"Description for Course A", "tutors_attributes"=>[{"name"=>"Tut A"}, {"name"=>"Tut B"}]}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:9:in `create'
+  [1m[36mCourse Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course A"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:9:in `create'
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course A"], ["description", "Description for Course A"], ["created_at", "2023-02-08 18:53:54.176446"], ["updated_at", "2023-02-08 18:53:54.176446"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:9:in `create'
+  [1m[36mTutor Create (1.1ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tut A"], ["course_id", 1], ["created_at", "2023-02-08 18:53:54.178824"], ["updated_at", "2023-02-08 18:53:54.178824"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:9:in `create'
+  [1m[36mTutor Create (0.5ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tut B"], ["course_id", 1], ["created_at", "2023-02-08 18:53:54.181884"], ["updated_at", "2023-02-08 18:53:54.181884"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:9:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:9:in `create'
+Completed 201 Created in 38ms (Views: 0.4ms | ActiveRecord: 9.6ms | Allocations: 18469)
+
+
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTutor Load (1.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" ORDER BY "tutors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTutor Load (0.9ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" ORDER BY "tutors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTutor Load (0.6ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 1]]
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 00:26:02 +0530
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:5:in `index'
+  [1m[36mTutor Load (0.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 18.6ms | ActiveRecord: 5.2ms | Allocations: 10640)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:27:29 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course B", "description"=>"Description for Course B", "tutors_attributes"=>[{"name"=>"Tut A"}, {"name"=>"Tut B"}]}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course B"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course B"], ["description", "Description for Course B"], ["created_at", "2023-02-08 18:57:29.827307"], ["updated_at", "2023-02-08 18:57:29.827307"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTutor Create (0.4ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tut A"], ["course_id", 2], ["created_at", "2023-02-08 18:57:29.828923"], ["updated_at", "2023-02-08 18:57:29.828923"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTutor Create (0.3ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Tut B"], ["course_id", 2], ["created_at", "2023-02-08 18:57:29.830888"], ["updated_at", "2023-02-08 18:57:29.830888"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 201 Created in 22ms (Views: 0.2ms | ActiveRecord: 6.3ms | Allocations: 10925)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:27:48 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course B", "description"=>"Description for Course B"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course B"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 422 Unprocessable Entity in 15ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 5173)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:28:00 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course C", "description"=>"Description for Course C"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course C"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Create (0.7ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course C"], ["description", "Description for Course C"], ["created_at", "2023-02-08 18:58:00.391133"], ["updated_at", "2023-02-08 18:58:00.391133"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 201 Created in 8ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2818)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:28:42 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course D", "description"=>"Description for Course D", "tutors_attributes"=>[{"name"=>""}, {"name"=>""}]}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course D"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course D"], ["description", "Description for Course D"], ["created_at", "2023-02-08 18:58:42.074736"], ["updated_at", "2023-02-08 18:58:42.074736"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 201 Created in 20ms (Views: 0.2ms | ActiveRecord: 4.1ms | Allocations: 6364)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:30:29 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course E", "description"=>"Description for Course E", "tutors_attributes"=>[]}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course E"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course E"], ["description", "Description for Course E"], ["created_at", "2023-02-08 19:00:29.152688"], ["updated_at", "2023-02-08 19:00:29.152688"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 201 Created in 5ms (Views: 0.1ms | ActiveRecord: 1.6ms | Allocations: 2903)
+
+
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTutor Load (1.0ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 5]]
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:40:23 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course E", "description"=>"Description for Course E", "tutors_attributes"=>[]}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (1.2ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course E"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 422 Unprocessable Entity in 24ms (Views: 0.3ms | ActiveRecord: 5.0ms | Allocations: 11582)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:40:34 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course F", "description"=>"Description for Course F", "tutors_attributes"=>[]}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course F"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course F"], ["description", "Description for Course F"], ["created_at", "2023-02-08 19:10:34.243208"], ["updated_at", "2023-02-08 19:10:34.243208"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 201 Created in 7ms (Views: 0.1ms | ActiveRecord: 1.8ms | Allocations: 4071)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:40:56 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course G", "description"=>"Description for Course G"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course G"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course G"], ["description", "Description for Course G"], ["created_at", "2023-02-08 19:10:56.414334"], ["updated_at", "2023-02-08 19:10:56.414334"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 201 Created in 8ms (Views: 0.2ms | ActiveRecord: 1.5ms | Allocations: 2831)
+
+
+  [1m[36mTutor Load (0.8ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" ORDER BY "tutors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTutor Load (0.9ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" ORDER BY "tutors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTutor Load (1.0ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" ORDER BY "tutors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:42:42 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course H", "description"=>"Description for Course H"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course H"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course H"], ["description", "Description for Course H"], ["created_at", "2023-02-08 19:12:42.741439"], ["updated_at", "2023-02-08 19:12:42.741439"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 201 Created in 14ms (Views: 0.2ms | ActiveRecord: 4.8ms | Allocations: 5156)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:54:22 +0530
+  
+SyntaxError (/home/selldo/promobi_course_tutors_assesment/courses_tutors_app/app/models/course.rb:5: syntax error, unexpected '|', expecting '}'
+...tes_for :tutors, reject_if: { |attributes| binding.pry; attr...
+...                              ^
+/home/selldo/promobi_course_tutors_assesment/courses_tutors_app/app/models/course.rb:5: syntax error, unexpected '}', expecting `end'
+...ry; attributes['name'].blank? }, allow_destroy: true
+...                              ^
+):
+  
+app/models/course.rb:5: syntax error, unexpected '|', expecting '}'
+app/models/course.rb:5: syntax error, unexpected '}', expecting `end'
+app/models/course.rb:5: syntax error, unexpected '|', expecting '}'
+app/models/course.rb:5: syntax error, unexpected '}', expecting `end'
+app/models/course.rb:5: syntax error, unexpected '|', expecting '}'
+app/models/course.rb:5: syntax error, unexpected '}', expecting `end'
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 00:56:39 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"Course I", "description"=>"Description for Course I"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "Course I"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "Course I"], ["description", "Description for Course I"], ["created_at", "2023-02-08 19:26:39.319610"], ["updated_at", "2023-02-08 19:26:39.319610"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:10:in `create'
+Completed 201 Created in 23ms (Views: 0.3ms | ActiveRecord: 7.0ms | Allocations: 7786)
+
+
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:04:51 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/selldo/promobi_course_tutors_assesment/courses_tutors_app/app/controllers/api/v1/courses_controller.rb:5: syntax error, unexpected '\n', expecting =>
+...son: @courses, CourseSerializer
+...                               ^
+/home/selldo/promobi_course_tutors_assesment/courses_tutors_app/app/controllers/api/v1/courses_controller.rb:26: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/api/v1/courses_controller.rb:5: syntax error, unexpected '\n', expecting =>
+app/controllers/api/v1/courses_controller.rb:26: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/courses_controller.rb:5: syntax error, unexpected '\n', expecting =>
+app/controllers/api/v1/courses_controller.rb:26: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/api/v1/courses_controller.rb:5: syntax error, unexpected '\n', expecting =>
+app/controllers/api/v1/courses_controller.rb:26: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:05:23 +0530
+Processing by Api::V1::CoursesController#index as */*
+[active_model_serializers] Rendered CourseSerializer with ActiveModelSerializers::Adapter::Attributes (4.75ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.0ms | Allocations: 11083)
+
+
+  
+NoMethodError (undefined method `model_name' for ActiveRecord::Relation:Class
+
+          object.class.model_name.to_s.underscore
+                      ^^^^^^^^^^^
+Did you mean?  module_parent):
+  
+app/controllers/api/v1/courses_controller.rb:5:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:05:53 +0530
+Processing by Api::V1::CoursesController#index as */*
+[active_model_serializers] Rendered CourseSerializer with ActiveModelSerializers::Adapter::Attributes (3.19ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 6574)
+
+
+  
+NoMethodError (undefined method `model_name' for ActiveRecord::Relation:Class
+
+          object.class.model_name.to_s.underscore
+                      ^^^^^^^^^^^
+Did you mean?  module_parent):
+  
+app/controllers/api/v1/courses_controller.rb:5:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:06:22 +0530
+Processing by Api::V1::CoursesController#index as */*
+[active_model_serializers] Rendered CourseSerializer with ActiveModelSerializers::Adapter::Attributes (4.84ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 8083)
+
+
+  
+NoMethodError (undefined method `model_name' for ActiveRecord::Relation:Class
+
+          object.class.model_name.to_s.underscore
+                      ^^^^^^^^^^^
+Did you mean?  module_parent):
+  
+app/controllers/api/v1/courses_controller.rb:5:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:06:26 +0530
+Processing by Api::V1::CoursesController#index as */*
+[active_model_serializers] Rendered CourseSerializer with ActiveModelSerializers::Adapter::Attributes (6.46ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 6533)
+
+
+  
+NoMethodError (undefined method `model_name' for ActiveRecord::Relation:Class
+
+          object.class.model_name.to_s.underscore
+                      ^^^^^^^^^^^
+Did you mean?  module_parent):
+  
+app/controllers/api/v1/courses_controller.rb:5:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:07:56 +0530
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:5:in `index'
+  [1m[36mTutor Load (0.5ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9)[0m  [["course_id", 1], ["course_id", 2], ["course_id", 3], ["course_id", 4], ["course_id", 5], ["course_id", 6], ["course_id", 7], ["course_id", 8], ["course_id", 9]]
+  ↳ app/controllers/api/v1/courses_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.0ms)
+Completed 200 OK in 31ms (Views: 22.2ms | ActiveRecord: 6.3ms | Allocations: 15015)
+
+
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:08:12 +0530
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:5:in `index'
+  [1m[36mTutor Load (0.4ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9)[0m  [["course_id", 1], ["course_id", 2], ["course_id", 3], ["course_id", 4], ["course_id", 5], ["course_id", 6], ["course_id", 7], ["course_id", 8], ["course_id", 9]]
+  ↳ app/controllers/api/v1/courses_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.0ms)
+Completed 200 OK in 21ms (Views: 13.0ms | ActiveRecord: 5.7ms | Allocations: 9877)
+
+
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:08:22 +0530
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:5:in `index'
+  [1m[36mTutor Load (0.4ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9)[0m  [["course_id", 1], ["course_id", 2], ["course_id", 3], ["course_id", 4], ["course_id", 5], ["course_id", 6], ["course_id", 7], ["course_id", 8], ["course_id", 9]]
+  ↳ app/controllers/api/v1/courses_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (32.83ms)
+Completed 200 OK in 89ms (Views: 79.9ms | ActiveRecord: 5.9ms | Allocations: 10601)
+
+
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:32:01 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.5ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9)[0m  [["course_id", 1], ["course_id", 2], ["course_id", 3], ["course_id", 4], ["course_id", 5], ["course_id", 6], ["course_id", 7], ["course_id", 8], ["course_id", 9]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.79ms)
+Completed 200 OK in 34ms (Views: 21.8ms | ActiveRecord: 6.2ms | Allocations: 21288)
+
+
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 01:32:16 +0530
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9)[0m  [["course_id", 1], ["course_id", 2], ["course_id", 3], ["course_id", 4], ["course_id", 5], ["course_id", 6], ["course_id", 7], ["course_id", 8], ["course_id", 9]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.82ms)
+Completed 200 OK in 19ms (Views: 11.5ms | ActiveRecord: 4.7ms | Allocations: 12667)
+
+
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 12:11:38 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#index as */*
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 4918)
+
+
+  
+NoMethodError (undefined method `pagy' for #<Api::V1::CoursesController:0x00000000005370>
+
+    pagy, @courses = pagy(@courses, page: params[:page], per_page: params[:per_page])
+                     ^^^^):
+  
+app/controllers/api/v1/courses_controller.rb:6:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 12:12:13 +0530
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Count (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 3.2ms | Allocations: 6353)
+
+
+  
+NoMethodError (undefined method `json_with_pagination' for #<Api::V1::CoursesController:0x00000000006108>
+
+    render json_with_pagination(@courses, pagy, each_serializer: CourseSerializer)
+           ^^^^^^^^^^^^^^^^^^^^):
+  
+app/controllers/api/v1/courses_controller.rb:7:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 12:13:07 +0530
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.1ms | Allocations: 5390)
+
+
+  
+NoMethodError (undefined method `json' for #<Api::V1::CoursesController:0x00000000006dd8>
+
+    render json(@courses, pagy, each_serializer: CourseSerializer)
+           ^^^^
+Did you mean?  JSON):
+  
+app/controllers/api/v1/courses_controller.rb:7:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 12:13:29 +0530
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.1ms | Allocations: 3552)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007f36194b5f68>
+
+    binding.pry
+           ^^^^
+Did you mean?  try):
+  
+app/controllers/api/v1/courses_controller.rb:7:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 12:13:52 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.8ms | Allocations: 4634)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007f79ece83628>
+
+    binding.pry
+           ^^^^
+Did you mean?  try):
+  
+app/controllers/api/v1/courses_controller.rb:7:in `index'
+Started GET "/api/v1/courses" for ::1 at 2023-02-09 12:15:12 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#index as */*
+  [1m[36mCourse Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mCourse Load (2.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:7:in `index'
+  [1m[36mTutor Load (0.7ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9)[0m  [["course_id", 9], ["course_id", 8], ["course_id", 7], ["course_id", 6], ["course_id", 5], ["course_id", 4], ["course_id", 3], ["course_id", 2], ["course_id", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:7:in `index'
+  [1m[36mCourse Count (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT 1 AS one FROM "courses" ORDER BY created_at DESC LIMIT $1 OFFSET $2) subquery_for_count[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ (pry):3:in `index'
+No template found for Api::V1::CoursesController#index, rendering head :no_content
+Completed 204 No Content in 48229ms (ActiveRecord: 17.3ms | Allocations: 176400)
+
+
+Started GET "/api/v1/courses?per_page=2" for ::1 at 2023-02-09 12:17:36 +0530
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"2"}
+  [1m[36mCourse Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "courses"[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY created_at DESC LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:7:in `index'
+  [1m[36mTutor Load (1.4ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9)[0m  [["course_id", 9], ["course_id", 8], ["course_id", 7], ["course_id", 6], ["course_id", 5], ["course_id", 4], ["course_id", 3], ["course_id", 2], ["course_id", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:7:in `index'
+No template found for Api::V1::CoursesController#index, rendering head :no_content
+Completed 204 No Content in 617936ms (ActiveRecord: 2.7ms | Allocations: 39329)
+
+
+Started GET "/api/v1/courses?per_page=2&page=1" for ::1 at 2023-02-09 12:30:06 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NameError (uninitialized constant ApplicationController::Pagy
+
+  include Pagy::Backend
+          ^^^^):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/api/v1/courses_controller.rb:1:in `<main>'
+Started GET "/api/v1/courses?per_page=2&page=1" for ::1 at 2023-02-09 12:30:23 +0530
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"2", "page"=>"1"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.5ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2)[0m  [["course_id", 1], ["course_id", 2]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (8.22ms)
+Completed 200 OK in 9465ms (Views: 14.5ms | ActiveRecord: 6.5ms | Allocations: 138032)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTutors (20230208182945)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "tutors"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20230208182945"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTutors (20230208182945)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "tutors" ("id" bigserial primary key, "name" character varying NOT NULL, "course_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ecbf595870"
+FOREIGN KEY ("course_id")
+  REFERENCES "courses" ("id")
+)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE INDEX "index_tutors_on_course_id" ON "tutors" ("course_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20230208182945"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(857007549794769135)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTutor Load (1.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" ORDER BY "tutors"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started POST "/api/v1/courses" for ::1 at 2023-02-09 12:55:03 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"C++", "description"=>"Description for C++", "tutors_attributes"=>[{"name"=>"Name A"}, {"name"=>"Name B"}]}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "C++"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Create (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "C++"], ["description", "Description for C++"], ["created_at", "2023-02-09 07:25:03.188005"], ["updated_at", "2023-02-09 07:25:03.188005"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTutor Create (0.8ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Name A"], ["course_id", 10], ["created_at", "2023-02-09 07:25:03.190149"], ["updated_at", "2023-02-09 07:25:03.190149"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTutor Create (0.4ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Name B"], ["course_id", 10], ["created_at", "2023-02-09 07:25:03.192554"], ["updated_at", "2023-02-09 07:25:03.192554"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Completed 201 Created in 36ms (Views: 2.2ms | ActiveRecord: 8.4ms | Allocations: 22725)
+
+
+  [1m[36mCourse Load (0.9ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTutor Load (0.8ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 10]]
+  [1m[36mTutor Load (0.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" ORDER BY "tutors"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTutor Load (1.0ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1 LIMIT $2[0m  [["course_id", 10], ["LIMIT", 1]]
+  [1m[36mTutor Load (0.4ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1 LIMIT $2[0m  [["course_id", 10], ["LIMIT", 1]]
+  [1m[36mTutor Load (0.4ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 10]]
+Started GET "/api/v1/courses?per_page=2&page=1" for ::1 at 2023-02-09 13:22:30 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"2", "page"=>"1"}
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.6ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2)[0m  [["course_id", 1], ["course_id", 2]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.07ms)
+Completed 200 OK in 113355ms (Views: 21.0ms | ActiveRecord: 6.7ms | Allocations: 143146)
+
+
+Started GET "/api/v1/courses?per_page=2&page=1" for ::1 at 2023-02-09 13:25:11 +0530
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"2", "page"=>"1"}
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2)[0m  [["course_id", 1], ["course_id", 2]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (28022.5ms)
+Completed 500 Internal Server Error in 28043ms (ActiveRecord: 4.7ms | Allocations: 44622)
+
+
+  
+NoMethodError (undefined method `content' for #<Course id: 1, title: "Course A", description: "Description for Course A", created_at: "2023-02-08 18:53:54.176446000 +0000", updated_at: "2023-02-08 18:53:54.176446000 +0000">):
+  
+app/serializers/course_serializer.rb:7:in `content'
+app/controllers/api/v1/courses_controller.rb:6:in `index'
+Started GET "/api/v1/courses?per_page=2&page=1" for ::1 at 2023-02-09 13:26:13 +0530
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"2", "page"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 2], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.2ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2)[0m  [["course_id", 1], ["course_id", 2]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.75ms)
+Completed 200 OK in 19ms (Views: 10.8ms | ActiveRecord: 3.7ms | Allocations: 7864)
+
+
+Started GET "/api/v1/courses?per_page=10&page=1" for ::1 at 2023-02-09 13:26:57 +0530
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"10", "page"=>"1"}
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.5ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["course_id", 1], ["course_id", 2], ["course_id", 3], ["course_id", 4], ["course_id", 5], ["course_id", 6], ["course_id", 7], ["course_id", 8], ["course_id", 9], ["course_id", 10]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.23ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 2.0ms | Allocations: 10278)
+
+
+  [1m[36mCourse Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "courses"[0m
+  [1m[36mTutor Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "tutors"[0m
+Started POST "/api/v1/courses" for ::1 at 2023-02-10 00:19:36 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"C+", "description"=>"Description for C++", "tutors_attributes"=>[]}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "C+"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Create (0.5ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "C+"], ["description", "Description for C++"], ["created_at", "2023-02-09 18:49:36.449358"], ["updated_at", "2023-02-09 18:49:36.449358"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.12ms)
+Completed 201 Created in 25ms (Views: 1.9ms | ActiveRecord: 5.6ms | Allocations: 16045)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-10 00:20:13 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"C+", "description"=>"Description for C++", "tutors_attributes"=>[{"name"=>nil}]}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "C+"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 422 Unprocessable Entity in 17ms (Views: 0.4ms | ActiveRecord: 2.6ms | Allocations: 10715)
+
+
+Started GET "/api/v1/courses?per_page=10&page=1" for ::1 at 2023-02-12 20:08:26 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"10", "page"=>"1"}
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.5ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)[0m  [["course_id", 1], ["course_id", 2], ["course_id", 3], ["course_id", 4], ["course_id", 5], ["course_id", 6], ["course_id", 7], ["course_id", 8], ["course_id", 9], ["course_id", 10]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.7ms)
+Completed 200 OK in 33ms (Views: 21.3ms | ActiveRecord: 6.3ms | Allocations: 19837)
+
+
+  [1m[36mCourse Delete All (5.0ms)[0m  [1m[31mDELETE FROM "courses"[0m
+  [1m[36mCourse Load (1.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 1]]
+  [1m[36mCourse Destroy (0.4ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 2]]
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 3]]
+  [1m[36mCourse Destroy (0.4ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.3ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 4]]
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.2ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 5]]
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.2ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 6]]
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.2ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 7]]
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.2ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 8]]
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.2ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 9]]
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.2ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 10]]
+  [1m[36mTutor Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tutors" WHERE "tutors"."id" = $1[0m  [["id", 1]]
+  [1m[36mTutor Destroy (0.3ms)[0m  [1m[31mDELETE FROM "tutors" WHERE "tutors"."id" = $1[0m  [["id", 2]]
+  [1m[36mCourse Destroy (0.4ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 10]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTutor Load (0.2ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" = $1[0m  [["course_id", 11]]
+  [1m[36mCourse Destroy (0.3ms)[0m  [1m[31mDELETE FROM "courses" WHERE "courses"."id" = $1[0m  [["id", 11]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mCourse Count (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "courses"[0m
+  [1m[36mTutor Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "tutors"[0m
+Started POST "/api/v1/courses" for ::1 at 2023-02-12 20:09:37 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"C", "description"=>"Description for C", "tutors_attributes"=>[{"name"=>"Ram"}, {"name"=>"Shyam"}]}}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "C"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "C"], ["description", "Description for C"], ["created_at", "2023-02-12 14:39:38.016023"], ["updated_at", "2023-02-12 14:39:38.016023"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTutor Create (0.6ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Ram"], ["course_id", 12], ["created_at", "2023-02-12 14:39:38.018249"], ["updated_at", "2023-02-12 14:39:38.018249"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTutor Create (0.3ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Shyam"], ["course_id", 12], ["created_at", "2023-02-12 14:39:38.020078"], ["updated_at", "2023-02-12 14:39:38.020078"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.11ms)
+Completed 201 Created in 35ms (Views: 1.8ms | ActiveRecord: 9.8ms | Allocations: 22492)
+
+
+Started POST "/api/v1/courses" for ::1 at 2023-02-12 20:09:55 +0530
+Processing by Api::V1::CoursesController#create as */*
+  Parameters: {"course"=>{"title"=>"C++", "description"=>"Description for C++", "tutors_attributes"=>[{"name"=>"Bonish"}, {"name"=>"Atharva"}]}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "courses" WHERE "courses"."title" = $1 LIMIT $2[0m  [["title", "C++"], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mCourse Create (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("title", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["title", "C++"], ["description", "Description for C++"], ["created_at", "2023-02-12 14:39:55.358210"], ["updated_at", "2023-02-12 14:39:55.358210"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTutor Create (0.8ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Bonish"], ["course_id", 13], ["created_at", "2023-02-12 14:39:55.360229"], ["updated_at", "2023-02-12 14:39:55.360229"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTutor Create (0.4ms)[0m  [1m[32mINSERT INTO "tutors" ("name", "course_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Atharva"], ["course_id", 13], ["created_at", "2023-02-12 14:39:55.363415"], ["updated_at", "2023-02-12 14:39:55.363415"]]
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/courses_controller.rb:12:in `create'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.07ms)
+Completed 201 Created in 16ms (Views: 0.6ms | ActiveRecord: 3.0ms | Allocations: 5691)
+
+
+Started GET "/api/v1/courses?per_page=10&page=1" for ::1 at 2023-02-12 20:09:59 +0530
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"10", "page"=>"1"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.6ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2)[0m  [["course_id", 12], ["course_id", 13]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.5ms)
+Completed 200 OK in 15ms (Views: 10.5ms | ActiveRecord: 1.1ms | Allocations: 6819)
+
+
+Started GET "/api/v1/courses?per_page=10&page=1" for ::1 at 2023-02-12 20:13:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::CoursesController#index as */*
+  Parameters: {"per_page"=>"10", "page"=>"1"}
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" LIMIT $1 OFFSET $2[0m  [["LIMIT", 10], ["OFFSET", 0]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+  [1m[36mTutor Load (0.6ms)[0m  [1m[34mSELECT "tutors".* FROM "tutors" WHERE "tutors"."course_id" IN ($1, $2)[0m  [["course_id", 12], ["course_id", 13]]
+  ↳ app/controllers/api/v1/courses_controller.rb:6:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.32ms)
+Completed 200 OK in 38ms (Views: 23.3ms | ActiveRecord: 9.3ms | Allocations: 18310)
+
+
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" ORDER BY "courses"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mCourse Load (1.0ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
